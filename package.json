@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-knobs": "^5.2.5",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-redux": "^7.1.1",
     "react-scripts": "3.2.0",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "storybook-chromatic": "^3.0.3"
   },
   "scripts": {
+    "chromatic": "CHROMATIC_APP_CODE=0s9991vms5m chromatic",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
