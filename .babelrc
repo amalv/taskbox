@@ -1,5 +1,4 @@
 {
-    "plugins": [
-        "macros"
-    ]
+  "presets": ["@babel/preset-react"],
+  "plugins": ["macros"]
 }

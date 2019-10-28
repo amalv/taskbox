@@ -21,6 +21,26 @@ const longTitle = `This task's name is absurdly large. In fact, I think if I kee
 
 storiesOf('Task', module)
   .addDecorator(withKnobs)
+  .addParameters({
+  assets: [
+      {
+        name: 'app',
+        url: '/designs/app.png',
+      },
+      {
+        name: 'items',
+        url: '/designs/items.png',
+      },
+      {
+        name: 'list 1',
+        url: '/designs/list-1.png',
+      },
+      {
+        name: 'list 2',
+        url: '/designs/list-2.png',
+      },
+    ],
+  })
   .add('default', () => {
     return <Task task={object('task', { ...task })} {...actions} />;
   })
